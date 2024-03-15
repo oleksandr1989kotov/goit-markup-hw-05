@@ -636,5 +636,133 @@
     </footer>
 
     <!-- ========/ page footer ======= -->
+
+    <!-- ======== backdrop ======== -->
+
+    <!-- <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <svg
+            class="modal-close-button-icon"
+            width="24"
+            height="24"
+            aria-label="close icon"
+          >
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div> -->
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-button" type="button">
+          <svg
+            class="modal-close-btn-icon"
+            width="24"
+            height="24"
+            aria-label="close icon"
+          >
+            <use href="/images/icons/sprite.svg#icon-modal-close-icon"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label for="user-name" class="review-form-field-label">Name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                type="text"
+                class="review-form-field-input"
+                name="user-name"
+                id="user-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЕґҐ']+"
+                title="Mykola"
+                required
+              />
+              <svg width="18" height="18" class="review-form-field-icon">
+                <use href="/images/icons/sprite.svg#icon-modal-name-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label for="user-phone" class="review-form-field-label"
+              >Phone</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                type="tel"
+                class="review-form-field-input"
+                name="user-phone"
+                id="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="xxx-xxx-xxxx"
+                required
+              /><svg width="18" height="18" class="review-form-field-icon">
+                <use
+                  href="/images/icons/sprite.svg#icon-modal-phone-icon"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label for="user-email" class="review-form-field-label"
+              >Email</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                type="email"
+                class="review-form-field-input"
+                name="user-email"
+                id="user-email"
+                required
+              /><svg width="18" height="18" class="review-form-field-icon">
+                <use href="/images/icons/sprite.svg#icon-modal-mail-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="review-form-field-wrapper review-form-field-wrapper-coment"
+          >
+            <label for="user-coment" class="review-form-field-label"
+              >Comment</label
+            >
+            <textarea
+              name="user-coment"
+              id="user-coment"
+              placeholder="Text input"
+              class="review-form-field-coment"
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox">
+            <input
+              type="checkbox"
+              class="review-form-privacy-checkbox visually-hidden"
+              name="privacy-checkbox"
+              id="privacy-checkbox"
+              value="true"
+              required
+            />
+            <label for="privacy-checkbox" class="review-form-privacy-label"
+              ><span class="review-form-own-checkbox"
+                ><svg
+                  class="review-form-own-checkbox-icon"
+                  width="10"
+                  height="8"
+                >
+                  <use
+                    href="/images/icons/sprite.svg#icon-icon-modal-checkbox-iconsvg"
+                  ></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="#">Privacy Policy</a>
+              ></label
+            >
+          </div>
+          <button class="review-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
