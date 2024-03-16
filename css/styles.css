@@ -636,7 +636,7 @@ img {
   margin-bottom: 8px;
 }
 .review-form-field-wrapper-coment {
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 .review-form-input-wrapper {
   position: relative;
@@ -660,6 +660,12 @@ img {
   padding: 8px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
 }
 .review-form-field-comment::placeholder {
   font-size: 12px;
