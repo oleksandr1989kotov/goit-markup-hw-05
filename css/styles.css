@@ -586,7 +586,7 @@ img {
   border-radius: 4px;
   width: 408px;
   min-height: 584px;
-  padding: 72px 24px 488px;
+  padding: 72px 24px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
@@ -611,6 +611,9 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -626,6 +629,7 @@ img {
   width: 8px;
   height: 8px;
   padding: 0px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* /Modal Styles */
 /* Rewiew form styles */
@@ -640,7 +644,7 @@ img {
 }
 .review-form-field-label {
   font-size: 12px;
-  line-height: 1.18;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
@@ -653,6 +657,8 @@ img {
   height: 40px;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 .review-form-field-input:focus {
   outline: transparent;
